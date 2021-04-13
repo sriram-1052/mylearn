@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title> Booking details </title>
+    <style>
+    body {
+      background: url(images/backg.webp);
+      background-repeat: no-repeat;
+      background-size: 2000px 1500px;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #4CAF50;
+    }
+    </style>
+  </head>
+  <body>
+    <center><h1 style="color: white;">Booking Details</h1></centre>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li style="float:right"><a class="active" href="contact.html">Contact</a></li>
+    </ul><br>
+    <center><h1> Take your screenhot here</h1>
+    <img src="images/a.jpg" alt="Sulthan" title="Sulthan" width="600" height="400">
+    <h2 style="padding-top:10px; font-size:40px; text-align:justify; margin-left:600px;"><script>
+    var a,b,c;
+    a=prompt("Enter the name:");
+    b=prompt("Enter the phone number:");
+    c="Sulthan";
+    if(a!=null || b!=null){
+      document.writeln("Name: "+a+"</br>");
+      document.writeln("Phone Number: "+b+"</br>");
+      document.writeln("Movie Name:"+c+"</br>");
+      document.writeln("Booking Id: "+"0S01"+b+"1801"+"</br>");
+      document.writeln("Ticket number:"+c+b)
+    }
+    else{
+      alert("Refresh and enter the details");
+    }
+    </script></h2></center>
+    <a href="booka.html" title="Return back"><center><h1><b> Click Here To Go Back </b></h1></center></a>
+    <a href="home.html" title="Return home"><center><h1><b> Click Here To Go Home </b></h1></center></a>
+  </body>
+</html>
